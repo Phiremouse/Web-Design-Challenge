@@ -7,14 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
 
     <title>Climate @ Latitude</title>
 </head>
 <body class="bg-secondary">
     <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-        <a class="navbar-brand d-flex mr-auto bg-info p-2" href="index.html">
-            <img src="Assets/images/squirrel.svg" class="d-inline-block mr-2" width="30" height="30" alt="">
+        <a class="navbar-brand d-flex mr-auto bg-info p-2" href="../index.html">
+            <img src="../Assets/images/squirrel.svg" class="d-inline-block mr-2" width="30" height="30" alt="">
             Latitude
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,26 +23,25 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item active">
-                    <a class="nav-link " href="index.html">Home </a>
+                    <a class="nav-link " href="../index.html">Home </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="sr-only">(current)</span>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item " href="plot1.html">Max Temperature</a>
-                        <a class="dropdown-item " href="plot2.html">Humidity</a>
-                        <a class="dropdown-item text-success" href="plot3.html">Cloudiness</a>
+                        <a class="dropdown-item" href="plot1.html">Max Temperature</a>
+                        <a class="dropdown-item" href="plot2.html">Humidity</a>
+                        <a class="dropdown-item" href="plot3.html">Cloudiness</a>
                         <a class="dropdown-item" href="plot4.html">Wind Speed</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="comparison.html">Comparison</a>
+                    <a class="nav-link text-success" href="comparison.html">Comparison</a><span class="sr-only">(current)</span>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="Data.html">Data</a>
+                    <a class="nav-link" href="/Resources/Data.html">Data</a>
                 </li>
 
             </ul>
@@ -50,10 +49,11 @@
     </nav>
 
     <div class="row">
-        <div class="container rounded-lg bg-white border border-light m-5 ">
+
+        <div class="container-fluid rounded-lg bg-white border border-light  m-5">
             <div class="row">
                 <div class="col">
-                    <p class="h1 text-info">Cloudiness</p>
+                    <p class="h1 text-info"> Comparison: Latitude vs X</p>
                 </div>
             </div>
             <div class="row">
@@ -61,29 +61,32 @@
                     <hr />
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col">
+                    <p class="h6 text"> Click any plot to get an in-depth analysis.</p>
+                </div>
+            </div>
             <div class="row">
 
-                <div class="h-25 col d-inline-block">
-                    <img src="Assets/images/Fig3.png" alt="Cloudiness" class="img-fluid">
+                <div class=" col d-inline-block">
+                    <a href="plot1.html"><img src="../Assets/images/Fig1.png" alt="Intro Picture Placeholder" class="img-fluid"></a>
+                </div>
+
+                <div class=" col d-inline-block">
+                    <a href="plot2.html"><img src="../Assets/images/Fig2.png" alt="Intro Picture Placeholder" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col d-inline-block">
+                    <a href="plot3.html"><img src="../Assets/images/Fig3.png" alt="Intro Picture Placeholder" class="img-fluid"></a>
                 </div>
 
                 <div class="col d-inline-block">
-
-                    <p class="d-inline-block">
-
-                        There does not appear to be a correlation between cloudiness and latitude.
-                        
-                    </p>
-
-
+                    <a href="plot4.html"><img src="../Assets/images/Fig4.png" alt="Intro Picture Placeholder" class="img-fluid"></a>
                 </div>
-
-
             </div>
+
         </div>
-
-
     </div>
 
     <footer>

@@ -13,8 +13,8 @@
 </head>
 <body class="bg-secondary">
     <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-        <a class="navbar-brand d-flex mr-auto bg-info p-2" href="index.html">
-            <img src="Assets/images/squirrel.svg" class="d-inline-block mr-2" width="30" height="30" alt="">
+        <a class="navbar-brand d-flex mr-auto bg-info p-2" href="../index.html">
+            <img src="../Assets/images/squirrel.svg" class="d-inline-block mr-2" width="30" height="30" alt="">
             Latitude
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,16 +23,17 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
                 <li class="nav-item active">
-                    <a class="nav-link " href="index.html">Home </a>
+                    <a class="nav-link " href="../index.html">Home </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">(current)</span>
+                    <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">(current)</span>
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item text-success" href="plot1.html">Max Temperature</a>
-                        <a class="dropdown-item" href="plot2.html">Humidity</a>
-                        <a class="dropdown-item" href="plot3.html">Cloudiness</a>
+                        <a class="dropdown-item " href="plot1.html">Max Temperature</a>
+                        <a class="dropdown-item " href="plot2.html">Humidity</a>
+                        <a class="dropdown-item text-success" href="plot3.html">Cloudiness</a>
                         <a class="dropdown-item" href="plot4.html">Wind Speed</a>
                     </div>
                 </li>
@@ -41,7 +42,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="Data.html">Data</a>
+                    <a class="nav-link" href="../Resources/Data.html">Data</a>
                 </li>
 
             </ul>
@@ -52,7 +53,7 @@
         <div class="container rounded-lg bg-white border border-light m-5 ">
             <div class="row">
                 <div class="col">
-                    <p class="h1 text-info"> Max Temperature</p>
+                    <p class="h1 text-info">Cloudiness</p>
                 </div>
             </div>
             <div class="row">
@@ -63,14 +64,16 @@
 
             <div class="row">
 
-                <div class="h-25 col d-inline-block">
-                    <img src="Assets/images/Fig1.png" alt="Max Temperature" class="img-fluid">
+                <div class="h-25 col d-inline-block col-md-7 col-sm-12">
+                    <img src="../Assets/images/Fig3.png" alt="Cloudiness" class="img-fluid">
                 </div>
 
-                <div class="col d-inline-block">
+                <div class="col d-inline-block col-md-5 col-sm-12">
 
                     <p class="d-inline-block">
-                        As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg. Latitude). Latitude is one of the main factors affecting temperature.This has to do with the shape of the earth.Another reason is due to the angle of solar incidence, this is the angle at which the Sun's rays strike the Earth's surface. At the Equator, the Sun's rays strike the Earth at a right angle, which makes the heat more intense and concentrated over a small area.
+
+                        There does not appear to be a correlation between cloudiness and latitude.
+                        
                     </p>
 
 
